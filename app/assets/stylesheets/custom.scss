@@ -8,6 +8,12 @@ $gray-light: #777;
 $gray-darker: #222;
 $gray: #555;
 
+@mixin box_sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: boder-box;
+}
+
 /* universal */
 
 body {
@@ -99,3 +105,11 @@ footer {
 	}
 }
 
+/* miscellaneous */
+.debug_dump {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+	@include box_sizing;
+}
